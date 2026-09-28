@@ -1,8 +1,8 @@
 # Dữ liệu
 
-Tải bộ dữ liệu Kaggle **Store Sales – Time Series Forecasting** (Corporación Favorita) và đặt vào thư mục này:
+Bộ dữ liệu Kaggle **Store Sales – Time Series Forecasting** (Corporación Favorita):
 
-- `train.csv` (bắt buộc)
-- `stores.csv`, `oil.csv`, `transactions.csv`, `holidays_events.csv` (dùng để tạo đặc trưng bổ sung)
+- `train.csv.gz` – bản nén của `train.csv` (122 MB vượt giới hạn 100 MB/tệp của GitHub). Mã nguồn tự đọc bản nén khi không có `train.csv`; không cần giải nén.
+- `stores.csv`, `oil.csv`, `transactions.csv`, `holidays_events.csv` – dữ liệu bổ sung dùng để tạo đặc trưng.
 
-Các tệp CSV không được đưa lên GitHub (xem `.gitignore`). Sau khi đặt dữ liệu, chạy `START_WINDOWS.bat`.
+Chỉ mở dashboard với kết quả có sẵn: `OPEN_DASHBOARD.bat`. Chạy lại toàn bộ quy trình (khoảng 53 phút): `START_WINDOWS.bat`.

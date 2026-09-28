@@ -7,8 +7,8 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 
-# Du lieu Kaggle (tai ve theo huong dan trong data/raw/README.md)
-data/raw/*.csv
+# train.csv (122 MB) vuot gioi han 100 MB cua GitHub -> day ban nen train.csv.gz (code tu doc)
+data/raw/train.csv
 
 # File lon, sinh lai khi chay START_WINDOWS.bat (vuot gioi han 100 MB cua GitHub)
 outputs/03_feature_engineering/features.parquet

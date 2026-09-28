@@ -26,6 +26,7 @@ def synthetic(seed=42, stores=4, families=8, days=620):
     return pd.DataFrame(rows,columns=["date","store_nbr","family","sales","onpromotion"])
 def load_real(raw):
     p=Path(raw)/"train.csv"
+    if not p.exists() and (Path(raw)/"train.csv.gz").exists(): p=Path(raw)/"train.csv.gz"
     if not p.exists(): raise FileNotFoundError("Thiếu train.csv. Dùng --mode synthetic để kiểm thử.")
     d=pd.read_csv(p,parse_dates=["date"])
     sch=detect_schema(d)

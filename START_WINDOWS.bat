@@ -15,7 +15,7 @@ if not exist ".venv\Scripts\python.exe" (
 ".venv\Scripts\python.exe" -m pip install --upgrade pip
 ".venv\Scripts\python.exe" -m pip install -r requirements.txt
 if errorlevel 1 goto :fail
-if not exist "data\raw\train.csv" (echo [ERROR] Put Favorita train.csv in data\raw\ & pause& exit /b 1)
+if not exist "data\raw\train.csv" if not exist "data\raw\train.csv.gz" (echo [ERROR] Thieu data\raw\train.csv hoac train.csv.gz & pause& exit /b 1)
 
 for %%F in (
   01_data_validation.py

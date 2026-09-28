@@ -9,6 +9,7 @@ def od(stage):
     p=OUT/stage; p.mkdir(parents=True,exist_ok=True); return p
 def load_train():
     p=RAW/"train.csv"
+    if not p.exists() and (RAW/"train.csv.gz").exists(): p=RAW/"train.csv.gz"   # bản nén trên GitHub
     if not p.exists(): raise FileNotFoundError(f"Missing {p}")
     d=pd.read_csv(p,parse_dates=["date"])
     need={"date","store_nbr","family","sales","onpromotion"}
