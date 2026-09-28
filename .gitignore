@@ -1,0 +1,26 @@
+# Moi truong Python
+.venv/
+__pycache__/
+*.pyc
+
+# Khoa API / bi mat
+.env
+.streamlit/secrets.toml
+
+# Du lieu Kaggle (tai ve theo huong dan trong data/raw/README.md)
+data/raw/*.csv
+
+# File lon, sinh lai khi chay START_WINDOWS.bat (vuot gioi han 100 MB cua GitHub)
+outputs/03_feature_engineering/features.parquet
+outputs/04_model_comparison/models/random_forest.joblib
+
+# Thu muc cau hinh cua cong cu AI (tu sinh khi mo folder)
+.agents/
+.claude/
+
+# File tam cua Office / he dieu hanh
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store

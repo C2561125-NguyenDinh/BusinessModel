@@ -1,0 +1,5 @@
+optional_source,rule
+stores.csv: static store metadata,known/static or lagged >=16 calendar days
+oil.csv: oil price lagged 16 calendar days,known/static or lagged >=16 calendar days
+transactions.csv: store transactions lagged 16 calendar days,known/static or lagged >=16 calendar days
+"holidays_events.csv: national holidays (not transferred, excluding Work Day)",known/static or lagged >=16 calendar days

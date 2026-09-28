@@ -1,0 +1,11 @@
+{
+  "selection_metric": "mean WAPE across 3 rolling-origin CV folds",
+  "tie_breakers": [
+    "RMSE_mean",
+    "MAE_mean"
+  ],
+  "winner": "XGBoost",
+  "final_holdout_used_for_selection": false,
+  "final_holdout_days": 16,
+  "pipeline_version": "1.0"
+}

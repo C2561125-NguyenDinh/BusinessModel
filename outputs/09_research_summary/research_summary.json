@@ -1,0 +1,42 @@
+{
+  "pipeline_version": "1.0",
+  "selected_model": "XGBoost",
+  "selection_rule": "mean WAPE across 3 rolling-origin CV folds",
+  "selected_before_final_holdout": true,
+  "selected_model_final_holdout_metrics": {
+    "model": "XGBoost",
+    "selected_by_cv": true,
+    "MAE": 66.9266428243744,
+    "RMSE": 225.60186171415236,
+    "WAPE": 0.1432680143590986,
+    "sMAPE": 0.5422793789370066,
+    "RMSLE": 0.5751875208499045,
+    "train_seconds": 55.66149640083313,
+    "train_rows": 2660988.0
+  },
+  "probabilistic_method": "Mondrian split-conformal residual intervals (10 bins of point forecast) around selected XGBoost",
+  "probabilistic_metrics": {
+    "selected_model": "XGBoost",
+    "uncertainty_method": "Mondrian split-conformal residual intervals (10 bins of point forecast) around selected XGBoost",
+    "Pinball_P10": 17.850227687394355,
+    "Pinball_P50": 33.42767291835485,
+    "Pinball_P90": 20.960021399201604,
+    "Coverage_P10_P90": 0.7539632435465768,
+    "Mean_interval_width": 181.307258398624
+  },
+  "inventory_scenario_rows": 1782,
+  "risk_counts": {
+    "HIGH": 1064,
+    "MEDIUM": 634,
+    "LOW": 84
+  },
+  "scientific_limits": [
+    "Promotion what-if is a conditional prediction, not a causal effect; onpromotion is not a discount %.",
+    "Inventory outputs use explicit scenario assumptions (inventory position = 0.8 × P50, Cu = 3, Co = 1) because actual inventory/lead-time/cost are absent.",
+    "Feature importance is predictive, not causal.",
+    "Random Forest is trained on a 600,000-row sample for computational reasons; other models use all rows.",
+    "Only three rolling-origin folds are used; differences smaller than the fold standard deviation should not be over-interpreted.",
+    "Summing daily quantiles over 16 days is descriptive and is not the exact quantile of total demand.",
+    "GenAI layer runs rule-based unless an API key is supplied; LLM text must pass a numeric grounding check."
+  ]
+}

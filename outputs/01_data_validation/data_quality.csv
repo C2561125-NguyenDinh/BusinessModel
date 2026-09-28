@@ -1,0 +1,2 @@
+rows,date_min,date_max,stores,families,series,missing_sales,missing_onpromotion,duplicates,zero_sales_share,promotion_row_share
+3000888,2013-01-01,2017-08-15,54,33,1782,0,0,0,0.3129506999261552,0.20371603338745065

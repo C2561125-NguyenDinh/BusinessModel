@@ -1,0 +1,2 @@
+selected_model,uncertainty_method,Pinball_P10,Pinball_P50,Pinball_P90,Coverage_P10_P90,Mean_interval_width
+XGBoost,Mondrian split-conformal residual intervals (10 bins of point forecast) around selected XGBoost,17.850227687394355,33.42767291835485,20.960021399201604,0.7539632435465768,181.30725839862401
